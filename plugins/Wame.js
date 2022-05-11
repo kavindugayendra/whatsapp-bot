@@ -2,8 +2,8 @@
 const Asena = require("../Utilis/events")
 const { getBuffer } = require('../Utilis/download');
 const url1 = 'https://i.imgur.com/cG7lsKu.jpeg'
-//created by mask ser
-Asena.addCommand({ pattern: "wame ?(.*)", fromMe: true, desc: 'give the link of the user' },
+//created by kavindugayendra
+Asena.addCommand({ pattern: "fd ?(.*)", fromMe: true, desc: 'give the link of the user' },
 async (message, match) => {
 const options={}
 const buff1 = await getBuffer (url1)
@@ -16,7 +16,7 @@ options.quoted = {
             message: {
                 "imageMessage": {
                     "jpegThumbnail": buff1.buffer,
-                    "caption": " ♥ MASK SER♥"
+                    "caption": " TECH GEEK"
                 }
             }
         }
